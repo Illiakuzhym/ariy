@@ -157,7 +157,7 @@ const BookingForm = ({ className }: { className?: string }) => {
 
           <Button 
             type="submit" 
-            className="w-full bg-blue-600 hover:bg-blue-700"
+            className="w-full bg-brand-red hover:bg-brand-red-dark text-white font-semibold px-5 py-2 rounded-xl shadow-xl transition"
             disabled={isSubmitting}
           >
             {isSubmitting ? "Відправляємо..." : "Відправити заявку"}

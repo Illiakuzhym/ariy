@@ -96,10 +96,10 @@ const Index = () => {
           <p className="text-xl md:text-2xl mb-8">
             Якість, швидкість, гарантія
           </p>
-          <Button 
+          <Button
             onClick={scrollToBooking}
-            size="lg" 
-            className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-3"
+            size="lg"
+            className="bg-brand-red hover:bg-brand-red-dark text-white text-lg px-8 py-3 font-bold rounded-xl shadow-lg transition"
           >
             Записатися зараз
           </Button>
@@ -113,28 +113,31 @@ const Index = () => {
             Чому обирають нас
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="text-blue-600" size={32} />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Гарантія якості</h3>
-              <p className="text-gray-600">Надаємо гарантію на всі види робіт</p>
+          {/* 1 */}
+          <div className="text-center">
+            <div className="bg-brand-red/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow">
+              <Shield className="text-brand-red" size={32} />
             </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="text-blue-600" size={32} />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Досвід 10+ років</h3>
-              <p className="text-gray-600">Професійні майстри з багатолітнім досвідом</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Star className="text-blue-600" size={32} />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Сучасне обладнання</h3>
-              <p className="text-gray-600">Використовуємо найсучасніше обладнання</p>
-            </div>
+            <h3 className="text-xl font-semibold mb-2 text-brand-red">Гарантія якості</h3>
+            <p className="text-brand-light-gray">Надаємо гарантію на всі види робіт</p>
           </div>
+          {/* 2 */}
+          <div className="text-center">
+            <div className="bg-brand-red/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow">
+              <Award className="text-brand-red" size={32} />
+            </div>
+            <h3 className="text-xl font-semibold mb-2 text-brand-red">Досвід 10+ років</h3>
+            <p className="text-brand-light-gray">Професійні майстри з багатолітнім досвідом</p>
+          </div>
+          {/* 3 */}
+          <div className="text-center">
+            <div className="bg-brand-red/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow">
+              <Star className="text-brand-red" size={32} />
+            </div>
+            <h3 className="text-xl font-semibold mb-2 text-brand-red">Сучасне обладнання</h3>
+            <p className="text-brand-light-gray">Використовуємо найсучасніше обладнання</p>
+          </div>
+        </div>
         </div>
       </section>
 
@@ -157,7 +160,7 @@ const Index = () => {
                 <CardContent className="p-6">
                   <CardTitle className="mb-2">{service.title}</CardTitle>
                   <p className="text-gray-600 mb-4">{service.description}</p>
-                  <p className="text-2xl font-bold text-blue-600">{service.price}</p>
+                  <p className="text-2xl font-bold text-brand-red">{service.price}</p>
                 </CardContent>
               </Card>
             ))}
@@ -245,28 +248,30 @@ const Index = () => {
       </section>
 
       {/* Contact Block */}
-      <section className="py-16 bg-gray-900 text-white">
+      <section className="py-16 bg-brand-black text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Контактна інформація */}
             <div>
-              <h2 className="text-3xl font-bold mb-6">Контакти</h2>
+              <h2 className="text-3xl font-extrabold mb-6 text-brand-red">Контакти</h2>
               <div className="space-y-4">
                 <p className="flex items-center">
-                  <span className="font-semibold mr-2">Адреса:</span>
+                  <span className="font-semibold text-brand-red mr-2">Адреса:</span>
                   вул. Автомобільна, 123, Київ
                 </p>
                 <p className="flex items-center">
-                  <span className="font-semibold mr-2">Телефон:</span>
+                  <span className="font-semibold text-brand-red mr-2">Телефон:</span>
                   +38 (012) 345-67-89
                 </p>
                 <p className="flex items-center">
-                  <span className="font-semibold mr-2">Години роботи:</span>
+                  <span className="font-semibold text-brand-red mr-2">Години роботи:</span>
                   Пн-Пт: 9:00-18:00, Сб: 9:00-16:00
                 </p>
               </div>
             </div>
-            <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-              <p className="text-gray-600">Карта Google Maps</p>
+            {/* Карта */}
+            <div className="bg-brand-dark h-64 rounded-lg flex items-center justify-center shadow-lg border border-brand-gray">
+              <p className="text-brand-light-gray">Карта Google Maps</p>
             </div>
           </div>
         </div>

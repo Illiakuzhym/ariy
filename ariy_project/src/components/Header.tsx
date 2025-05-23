@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -25,17 +24,17 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+    <header className="bg-brand-black text-white shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-              <span className="text-xl font-bold">TW</span>
+            <div className="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center shadow-lg">
+              <span className="text-xl font-bold text-white">AG</span>
             </div>
             <div className="hidden sm:block">
-              <h1 className="font-bold text-lg">Tire & Wheel</h1>
-              <p className="text-xs text-gray-300">Професійний сервіс</p>
+              <h1 className="font-extrabold text-lg text-brand-red leading-tight">ARIY GARAGE</h1>
+              <p className="text-xs text-brand-light-gray">Професійний сервіс</p>
             </div>
           </Link>
 
@@ -45,8 +44,10 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`hover:text-blue-400 transition-colors ${
-                  location.pathname === item.path ? "text-blue-400" : ""
+                className={`font-semibold transition-colors duration-150 ${
+                  location.pathname === item.path
+                    ? "text-brand-red underline underline-offset-4"
+                    : "hover:text-brand-red text-white"
                 }`}
               >
                 {item.name}
@@ -58,21 +59,21 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <a
               href="tel:+380123456789"
-              className="hidden sm:flex items-center space-x-2 text-blue-400 hover:text-blue-300"
+              className="hidden sm:flex items-center space-x-2 text-brand-light-gray hover:text-brand-red transition"
             >
               <Phone size={16} />
-              <span>+38 (012) 345-67-89</span>
+              <span className="font-semibold">+38 (012) 345-67-89</span>
             </a>
-            <Button 
+            <Button
               onClick={scrollToBooking}
-              className="bg-blue-600 hover:bg-blue-700"
+              className="bg-brand-red hover:bg-brand-red-dark text-white font-semibold px-5 py-2 rounded-xl shadow-xl transition"
             >
               Записатися
             </Button>
 
             {/* Mobile menu button */}
             <button
-              className="lg:hidden"
+              className="lg:hidden text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -82,26 +83,28 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="lg:hidden py-4 border-t border-gray-700">
+          <nav className="lg:hidden py-4 border-t border-brand-gray bg-brand-black text-white">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`block py-2 hover:text-blue-400 transition-colors ${
-                  location.pathname === item.path ? "text-blue-400" : ""
+                className={`block py-2 font-semibold transition-colors duration-150 ${
+                  location.pathname === item.path
+                    ? "text-brand-red underline underline-offset-4"
+                    : "hover:text-brand-red text-white"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
               </Link>
             ))}
-            <div className="pt-4 border-t border-gray-700 mt-4">
+            <div className="pt-4 border-t border-brand-gray mt-4">
               <a
                 href="tel:+380123456789"
-                className="flex items-center space-x-2 text-blue-400 py-2"
+                className="flex items-center space-x-2 text-brand-light-gray hover:text-brand-red py-2 transition"
               >
                 <Phone size={16} />
-                <span>+38 (012) 345-67-89</span>
+                <span className="font-semibold">+38 (012) 345-67-89</span>
               </a>
             </div>
           </nav>

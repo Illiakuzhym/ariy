@@ -99,7 +99,7 @@ const Services = () => {
                 <CardTitle className="mb-3 text-xl">{service.title}</CardTitle>
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-blue-600">Ціни:</h4>
+                  <h4 className="font-semibold text-brand-red">Ціни:</h4>
                   <ul className="space-y-1">
                     {service.prices.map((price, priceIndex) => (
                       <li key={priceIndex} className="text-sm text-gray-700">

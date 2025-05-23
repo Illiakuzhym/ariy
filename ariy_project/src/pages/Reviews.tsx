@@ -106,7 +106,7 @@ const Reviews = () => {
                 </p>
                 
                 <div className="border-t pt-4">
-                  <p className="text-sm text-blue-600 font-medium">
+                  <p className="text-sm text-brand-red font-medium">
                     Послуга: {review.service}
                   </p>
                 </div>
@@ -126,7 +126,7 @@ const Reviews = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               asChild
-              className="bg-blue-600 hover:bg-blue-700"
+              className="bg-brand-red hover:bg-brand-red-dark"
             >
               <a 
                 href="https://www.google.com/search?q=tire+wheel+service+reviews"

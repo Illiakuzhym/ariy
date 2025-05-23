@@ -87,7 +87,7 @@ const Portfolio = () => {
               key={filter.id}
               onClick={() => setActiveFilter(filter.id)}
               variant={activeFilter === filter.id ? "default" : "outline"}
-              className={activeFilter === filter.id ? "bg-blue-600 hover:bg-blue-700" : ""}
+              className={activeFilter === filter.id ? "bg-brand-red hover:bg-brand-red-dark" : ""}
             >
               {filter.name}
             </Button>

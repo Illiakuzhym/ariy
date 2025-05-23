@@ -79,7 +79,7 @@ const Contacts = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <MapPin className="text-blue-600" />
+                  <MapPin className="text-brand-red" />
                   <span>Адреса</span>
                 </CardTitle>
               </CardHeader>
@@ -95,7 +95,7 @@ const Contacts = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <Phone className="text-blue-600" />
+                  <Phone className="text-brand-red" />
                   <span>Телефони</span>
                 </CardTitle>
               </CardHeader>
@@ -116,7 +116,7 @@ const Contacts = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <Mail className="text-blue-600" />
+                  <Mail className="text-brand-red" />
                   <span>Email</span>
                 </CardTitle>
               </CardHeader>
@@ -132,7 +132,7 @@ const Contacts = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <Clock className="text-blue-600" />
+                  <Clock className="text-brand-red" />
                   <span>Години роботи</span>
                 </CardTitle>
               </CardHeader>
@@ -148,7 +148,7 @@ const Contacts = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <MessageCircle className="text-blue-600" />
+                  <MessageCircle className="text-brand-red" />
                   <span>Месенджери</span>
                 </CardTitle>
               </CardHeader>
@@ -163,13 +163,19 @@ const Contacts = () => {
                       Telegram
                     </a>
                   </Button>
-                  <Button asChild className="bg-green-500 hover:bg-green-600">
+                  <Button
+                    asChild
+                    className="text-white font-bold py-2 px-5 shadow-lg border-0"
+                    style={{
+                      background: "linear-gradient(90deg, #fd5 0%, #f15 30%, #c13584 60%, #833ab4 80%, #515bd4 100%)"
+                    }}
+                  >
                     <a 
-                      href="https://wa.me/380123456789"
+                      href="https://instagram.com/yourprofile"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      WhatsApp
+                      Instagram
                     </a>
                   </Button>
                   <Button asChild className="bg-purple-500 hover:bg-purple-600">
@@ -241,7 +247,7 @@ const Contacts = () => {
 
                   <Button 
                     type="submit" 
-                    className="w-full bg-blue-600 hover:bg-blue-700"
+                    className="w-full bg-brand-red hover:bg-brand-red-dark"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Відправляємо..." : "Відправити повідомлення"}
