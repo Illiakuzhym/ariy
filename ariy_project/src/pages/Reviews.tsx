@@ -129,7 +129,7 @@ const Reviews = () => {
               className="bg-brand-red hover:bg-brand-red-dark"
             >
               <a 
-                href="https://www.google.com/search?q=tire+wheel+service+reviews"
+                href="https://maps.app.goo.gl/qq5FstKmaAjeziW28"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2"

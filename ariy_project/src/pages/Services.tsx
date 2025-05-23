@@ -8,7 +8,7 @@ const Services = () => {
     {
       title: "Шиномонтаж",
       description: "Повний спектр послуг з монтажу та обслуговування шин",
-      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=250&fit=crop",
+      image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=250&fit=crop",
       prices: [
         "Зняття/встановлення колеса - від 50 грн",
         "Монтаж/демонтаж шини - від 80 грн", 

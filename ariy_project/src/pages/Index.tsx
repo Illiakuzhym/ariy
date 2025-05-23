@@ -10,11 +10,6 @@ const Index = () => {
 
   const galleryImages = [
     {
-      before: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop",
-      after: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&brightness=1.2",
-      description: "Покраска дисків BMW"
-    },
-    {
       before: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=300&fit=crop",
       after: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=300&fit=crop&brightness=1.2",
       description: "Шиномонтаж Mercedes"
@@ -31,7 +26,7 @@ const Index = () => {
       title: "Шиномонтаж",
       description: "Професійний монтаж та балансування коліс",
       price: "від 150 грн",
-      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=300&h=200&fit=crop"
     },
     {
       title: "Покраска дисків",
@@ -270,8 +265,15 @@ const Index = () => {
               </div>
             </div>
             {/* Карта */}
-            <div className="bg-brand-dark h-64 rounded-lg flex items-center justify-center shadow-lg border border-brand-gray">
-              <p className="text-brand-light-gray">Карта Google Maps</p>
+            <div className="bg-brand-dark h-64 rounded-lg shadow-lg border border-brand-gray overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.9811437565604!2d32.10639737649633!3d49.40926227141212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b5957e2a57b%3A0x14d5c528f53f6af!2sARIY%20garage!5e0!3m2!1sen!2sua!4v1748005127598!5m2!1sen!2sua"
+                className="w-full h-full border-0"
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Maps"
+              ></iframe>
             </div>
           </div>
         </div>

@@ -10,8 +10,8 @@ const Portfolio = () => {
       id: 1,
       category: "tire-service",
       title: "BMW 5 Series - Шиномонтаж",
-      beforeImage: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop",
-      afterImage: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&brightness=1.2",
+      beforeImage: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=300&fit=crop",
+      afterImage: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=300&fit=crop&brightness=1.2",
       description: "Заміна літньої гуми на зимову з балансуванням"
     },
     {

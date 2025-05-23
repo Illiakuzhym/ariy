@@ -262,12 +262,15 @@ const Contacts = () => {
                 <CardTitle>Як нас знайти</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-gray-600">
-                    <MapPin size={48} className="mx-auto mb-2" />
-                    <p>Інтерактивна карта Google Maps</p>
-                    <p className="text-sm">вул. Автомобільна, 123, Київ</p>
-                  </div>
+                <div className="bg-brand-dark h-64 rounded-lg shadow-lg border border-brand-gray overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.9811437565604!2d32.10639737649633!3d49.40926227141212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b5957e2a57b%3A0x14d5c528f53f6af!2sARIY%20garage!5e0!3m2!1sen!2sua!4v1748005127598!5m2!1sen!2sua"
+                    className="w-full h-full border-0"
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Google Maps"
+                  ></iframe>
                 </div>
               </CardContent>
             </Card>
