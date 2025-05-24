@@ -38,7 +38,7 @@ const BookingForm = ({ className }: { className?: string }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.name || !formData.phone || !formData.service) {
       toast({
         title: "Помилка",
@@ -50,10 +50,22 @@ const BookingForm = ({ className }: { className?: string }) => {
 
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
+      // Надсилаємо дані на backend
+      const response = await fetch("http://localhost:4000/api/send-to-telegram", { // заміни адресу!
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          service: formData.service,
+          datetime: formData.datetime,
+          comment: formData.comment,
+        }),
+      });
+
+      if (!response.ok) throw new Error("Server error");
+
       toast({
         title: "Заявка відправлена!",
         description: "Ми зв'яжемося з вами найближчим часом",
@@ -78,6 +90,7 @@ const BookingForm = ({ className }: { className?: string }) => {
       setIsSubmitting(false);
     }
   };
+
 
   return (
     <Card className={`w-full max-w-md mx-auto ${className}`} id="booking-form">
@@ -134,7 +147,7 @@ const BookingForm = ({ className }: { className?: string }) => {
             />
           </div>
 
-          <div>
+          {/* <div>
             <Label htmlFor="photo">Фото (необов'язково)</Label>
             <Input
               id="photo"
@@ -142,7 +155,7 @@ const BookingForm = ({ className }: { className?: string }) => {
               accept="image/*"
               onChange={handlePhotoChange}
             />
-          </div>
+          </div> */}
 
           <div>
             <Label htmlFor="comment">Коментар</Label>
