@@ -38,6 +38,25 @@ const Contacts = () => {
     try {
       await new Promise(resolve => setTimeout(resolve, 1000));
       
+      // Надсилаємо дані на backend
+      const response = await fetch("http://localhost:4000/api/connect-to-us-telegram", { // заміни адресу!
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: contactForm.name,
+          email: contactForm.email,
+          phone: contactForm.phone,
+          message: contactForm.message,
+        }),
+      });
+
+      if (!response.ok) throw new Error("Server error");
+       console.log("Response:", response);
+      if (response.status !== 200) {
+        throw new Error("Failed to send message");
+      }
+      console.log("Message sent successfully");
+
       toast({
         title: "Повідомлення відправлено!",
         description: "Ми зв'яжемося з вами найближчим часом",

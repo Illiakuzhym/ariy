@@ -32,5 +32,30 @@ app.post('/api/send-to-telegram', async (req, res) => {
   }
 });
 
+app.post('/api/connect-to-us-telegram', async (req, res) => {
+  const { name, email, phone, message } = req.body;
+  const text =
+    `<b>Нове повідомлення з контакти:</b>\n` +
+    `<b>Ім'я:</b> ${name}\n` +
+    (email ? `<b>Email:</b> ${email}\n` : "") +
+    (phone ? `<b>Телефон:</b> ${phone}\n` : "") +
+    `<b>Повідомлення:</b> ${message}`;
+  try {
+    await axios.post(
+      `https://api.telegram.org/bot${process.env.TG_BOT_TOKEN}/sendMessage`,
+      {
+        chat_id: process.env.TG_CHAT_ID,
+        text,
+        parse_mode: "HTML"
+      }
+    );
+    res.json({ ok: true });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
+
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log('Telegram backend started on', PORT));
