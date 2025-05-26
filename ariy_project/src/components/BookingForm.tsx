@@ -8,6 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "@/hooks/use-toast";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+
 const BookingForm = ({ className }: { className?: string }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -52,7 +54,7 @@ const BookingForm = ({ className }: { className?: string }) => {
 
     try {
       // Надсилаємо дані на backend
-      const response = await fetch("http://localhost:4000/api/send-to-telegram", { // заміни адресу!
+      const response = await fetch(BACKEND_URL+"/api/send-to-telegram", { // заміни адресу!
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

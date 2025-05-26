@@ -8,6 +8,9 @@ import { Phone, MapPin, Clock, Mail, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+
+
 const Contacts = () => {
   const [contactForm, setContactForm] = useState({
     name: "",
@@ -39,7 +42,7 @@ const Contacts = () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       // Надсилаємо дані на backend
-      const response = await fetch("http://localhost:4000/api/connect-to-us-telegram", { // заміни адресу!
+      const response = await fetch(BACKEND_URL+"/api/connect-to-us-telegram", { // заміни адресу!
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

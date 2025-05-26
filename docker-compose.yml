@@ -9,6 +9,7 @@ services:
 
   frontend:
     build: ./ariy_project
+    env_file: ./ariy_project/.env
     ports:
       - "3001:80"
     depends_on:
