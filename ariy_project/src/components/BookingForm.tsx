@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "@/hooks/use-toast";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;// || "http://localhost:4000";
 
 const BookingForm = ({ className }: { className?: string }) => {
   const [formData, setFormData] = useState({

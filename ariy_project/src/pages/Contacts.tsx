@@ -8,7 +8,7 @@ import { Phone, MapPin, Clock, Mail, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL; //|| "http://localhost:4000";
 
 
 const Contacts = () => {
