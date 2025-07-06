@@ -25,20 +25,20 @@ const Index = () => {
     {
       title: "Шиномонтаж",
       description: "Професійний монтаж та балансування коліс",
-      price: "від 150 грн",
-      image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=300&h=200&fit=crop"
+      price: "від 200 грн",
+      image: "..//public/gallery/шинка.png"
     },
     {
-      title: "Покраска дисків",
-      description: "Відновлення та покраска автомобільних дисків",
+      title: "Фарбування дисків",
+      description: "Відновлення та порошкове фарбування автомобільних дисків",
+      price: "від 1000 грн",
+      image: "..//public/gallery/диск.JPEG"
+    },
+    {
+      title: "Фарбування супортів",
+      description: "Фарбування супортів та інших деталей",
       price: "від 800 грн",
-      image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=300&h=200&fit=crop"
-    },
-    {
-      title: "Покраска супортів",
-      description: "Покраска супортів та інших деталей",
-      price: "від 500 грн",
-      image: "https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=300&h=200&fit=crop"
+      image: "..//public/gallery/супорт.jpg"
     }
   ];
 
@@ -51,7 +51,7 @@ const Index = () => {
     {
       name: "Марина К.", 
       rating: 5,
-      text: "Швидко, якісно, за розумну ціну. Обов'язково повернуся!"
+      text: "Швидко, якісно, за розумну ціну. Обов'язково повернуся!!!"
     },
     {
       name: "Дмитро Л.",
@@ -121,7 +121,7 @@ const Index = () => {
             <div className="bg-brand-red/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow">
               <Award className="text-brand-red" size={32} />
             </div>
-            <h3 className="text-xl font-semibold mb-2 text-brand-red">Досвід 10+ років</h3>
+            <h3 className="text-xl font-semibold mb-2 text-brand-red">Великий досвід</h3>
             <p className="text-brand-light-gray">Професійні майстри з багатолітнім досвідом</p>
           </div>
           {/* 3 */}
@@ -252,15 +252,15 @@ const Index = () => {
               <div className="space-y-4">
                 <p className="flex items-center">
                   <span className="font-semibold text-brand-red mr-2">Адреса:</span>
-                  вул. Автомобільна, 123, Київ
+                  вул. Чигиринська, 58, Черкаси
                 </p>
                 <p className="flex items-center">
                   <span className="font-semibold text-brand-red mr-2">Телефон:</span>
-                  +38 (012) 345-67-89
+                  +38 (063) 754-34-46
                 </p>
                 <p className="flex items-center">
                   <span className="font-semibold text-brand-red mr-2">Години роботи:</span>
-                  Пн-Пт: 9:00-18:00, Сб: 9:00-16:00
+                  Пн-Пт: 9:00-18:00, Сб-Нд: по домовленості
                 </p>
               </div>
             </div>
@@ -283,3 +283,4 @@ const Index = () => {
 };
 
 export default Index;
+

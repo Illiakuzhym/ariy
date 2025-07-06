@@ -107,8 +107,13 @@ const Contacts = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
+<<<<<<< HEAD
                   вул. Автомобільна, 123<br />
                   м. Київ, 02000<br />
+=======
+                  вул. Чигиринська, 58<br />
+                  м. Черкаси, 18000<br />
+>>>>>>> master
                   Україна
                 </p>
               </CardContent>
@@ -123,6 +128,7 @@ const Contacts = () => {
               </CardHeader>
               <CardContent className="space-y-2">
                 <p className="text-gray-700">
+<<<<<<< HEAD
                   <a href="tel:+380123456789" className="hover:text-blue-600">
                     +38 (012) 345-67-89
                   </a>
@@ -130,11 +136,24 @@ const Contacts = () => {
                 <p className="text-gray-700">
                   <a href="tel:+380987654321" className="hover:text-blue-600">
                     +38 (098) 765-43-21
+=======
+                  <a href="tel:+380637543446" className="hover:text-blue-600">
+                    +38 (063) 754-34-46
+                  </a>
+                </p>
+                <p className="text-gray-700">
+                  <a href="tel:+380684291259" className="hover:text-blue-600">
+                    +38 (068) 429-12-59
+>>>>>>> master
                   </a>
                 </p>
               </CardContent>
             </Card>
+<<<<<<< HEAD
 
+=======
+{/* 
+>>>>>>> master
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
@@ -149,7 +168,11 @@ const Contacts = () => {
                   </a>
                 </p>
               </CardContent>
+<<<<<<< HEAD
             </Card>
+=======
+            </Card> */}
+>>>>>>> master
 
             <Card>
               <CardHeader>
@@ -161,13 +184,21 @@ const Contacts = () => {
               <CardContent>
                 <div className="space-y-1 text-gray-700">
                   <p>Понеділок - П'ятниця: 9:00 - 18:00</p>
+<<<<<<< HEAD
                   <p>Субота: 9:00 - 16:00</p>
                   <p>Неділя: Вихідний</p>
+=======
+                  <p>Субота - Неділя: по домовленості</p>
+>>>>>>> master
                 </div>
               </CardContent>
             </Card>
 
+<<<<<<< HEAD
             <Card>
+=======
+            {/* <Card>
+>>>>>>> master
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
                   <MessageCircle className="text-brand-red" />
@@ -211,7 +242,11 @@ const Contacts = () => {
                   </Button>
                 </div>
               </CardContent>
+<<<<<<< HEAD
             </Card>
+=======
+            </Card> */}
+>>>>>>> master
           </div>
 
           {/* Contact Form and Map */}

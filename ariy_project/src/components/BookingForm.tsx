@@ -25,7 +25,6 @@ const BookingForm = ({ className }: { className?: string }) => {
     "Шиномонтаж",
     "Покраска дисків",
     "Покраска супортів та деталей",
-    "Комплексне обслуговування"
   ];
 
   const handleInputChange = (field: string, value: string) => {
