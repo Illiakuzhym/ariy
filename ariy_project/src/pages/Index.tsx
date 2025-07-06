@@ -26,19 +26,19 @@ const Index = () => {
       title: "Шиномонтаж",
       description: "Професійний монтаж та балансування коліс",
       price: "від 200 грн",
-      image: "..//public/gallery/шинка.png"
+      image: "/gallery/shinka.png"
     },
     {
       title: "Фарбування дисків",
       description: "Відновлення та порошкове фарбування автомобільних дисків",
       price: "від 1000 грн",
-      image: "..//public/gallery/диск.JPEG"
+      image: "/gallery/disk.JPEG"
     },
     {
       title: "Фарбування супортів",
       description: "Фарбування супортів та інших деталей",
       price: "від 800 грн",
-      image: "..//public/gallery/супорт.jpg"
+      image: "/gallery/support.jpg"
     }
   ];
 

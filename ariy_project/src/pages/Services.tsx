@@ -2,13 +2,16 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import BookingForm from "@/components/BookingForm";
+// import disk from "@/gallery/disk.JPEG";
+// import shinka from "@/../gallery/shinka.png";
+// import support from "@/../public/gallery/support.jpg";
 
 const Services = () => {
   const services = [
     {
       title: "Шиномонтаж",
       description: "Повний спектр послуг з монтажу та обслуговування шин",
-      image: "..//public/gallery/шинка.png",
+      image: "/gallery/shinka.png",
       prices: [
         "R13-15 - 200 грн/шт",
         "R16-18 - 300 грн/шт", 
@@ -19,7 +22,7 @@ const Services = () => {
     {
       title: "Фарбування дисків",
       description: "Професійне фарбування та відновлення автомобільних дисків",
-      image: "..//public/gallery/диск.JPEG",
+      image: "/gallery/disk.JPEG",
       prices: [
         "Фарбування дисків R13-R16 - від 1000 грн/шт",
         "Фарбування дисків R17-R19 - від 1400 грн/шт",
@@ -30,7 +33,7 @@ const Services = () => {
     {
       title: "Фарбування супортів та деталей",
       description: "Фарбування гальмівних супортів та інших деталей підвіски",
-      image: "..//public/gallery/супорт.jpg",
+      image: "/gallery/support.jpg",
       prices: [
         "Фарбування супортів (комплект) - від 800 грн",
         "Фарбування деталей підвіски - від 300 грн",
