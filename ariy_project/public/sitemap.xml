@@ -1,0 +1,13 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ariy-site.onrender.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ariy-site.onrender.com/services</loc>
+  </url>
+  <url>
+    <loc>https://ariy-site.onrender.com/contacts</loc>
+  </url>
+  <!-- додай інші сторінки -->
+</urlset>
