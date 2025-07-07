@@ -12,7 +12,4 @@ Allow: /
 
 User-agent: *
 Allow: /
-
-User-agent: *
-Allow: /
 Sitemap: https://ariy-site.onrender.com/sitemap.xml
